@@ -17,7 +17,7 @@ class usuario{
     public function cadastrar($nome, $cpf, $email, $telefone, $cidade, $senha){
 
         global $pdo;
-        //Verificação de cadastro
+        //Verificação do cadastro
         $sql = $pdo->prepare("SELECT ID_Usuario FROM tb_usuario WHERE email = :e");
         $sql-> bindValue (":e", $email);
         $sql->execute();

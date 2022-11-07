@@ -1,7 +1,0 @@
-public class TesteClassificados {
-
-    public static void main(String[] args) {
-        System.out.println("É apenas o inicio");
-        
-       
-    }

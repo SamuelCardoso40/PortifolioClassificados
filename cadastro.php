@@ -12,7 +12,7 @@
     <!-- Acesso externo comentado-->
     <!--<link rel="stylesheet" href="styles_classificados.css"/>--> 
     <!--<script src="ProjetoClassificados.js" defer></script>--> 
-    <!-- Adicionado o script INTERNO para melhor visualização-->
+    <!-- Adicionado script INTERNO para melhor visualização-->
 </head>
 <script>
 
