@@ -1,30 +1,30 @@
 <?php
-class usuario{
-    
+class usuario {   
     private $pdo;
     public $msgErro = "";
-    public function conectar($nome, $host, $usuario, $senha){
-
+    public function conectar($dbnome, $host, $usuario, $senha)
+    {
         global $pdo;
+        global $msgErro;
         try {
-            $pdo = new PDO("mysql:host=localhost; dbname=classificados", "hoot", "");        
+            $pdo = new PDO("mysql:dbname=".$dbnome.";host=".$host,$usuario,$senha);        
         } catch (PDOException $e) {
-            $msgErro = $e -> getMessage();
-
+            $msgErro = $e->getMessage();
         }
         
-    }
+}
     public function cadastrar($nome, $cpf, $email, $telefone, $cidade, $senha){
 
         global $pdo;
+        global $msgErro;
         //Verificação do cadastro
         $sql = $pdo->prepare("SELECT ID_Usuario FROM tb_usuario WHERE email = :e");
         $sql-> bindValue (":e", $email);
         $sql->execute();
-        if ($sql->rowCout() > 0 ){
+        if ($sql->rowCount() > 0 ){
             return false;
         } else{
-            $sql = $pdo->prepare("INSERT INTO tb_usuario (Nome_Usuario, cpf, email, telefone, cidade, senha) VALUES (:n, :c, :e, :t, :l, :s");
+            $sql = $pdo->prepare("INSERT INTO Tb_Usuario (Nome_Usuario, cpf, email, telefone, cidade, senha) VALUES (:n, :c, :e, :t, :l, :s");
             $sql-> bindValue (":n", $nome);
             $sql-> bindValue (":c", $cpf);
             $sql-> bindValue (":e", $email);
@@ -35,22 +35,23 @@ class usuario{
             return true;
         }
     }
-    public function logar($email, $senha){
+    public function logar($email, $senha){ 
 
         global $pdo;
+        global $msgErro;
         $sql = $pdo->prepare("SELECT ID_Usuario FROM tb_usuario WHERE email = :e AND senha = :s");
         $sql->bindValue(":e",$email);
         $sql->bindValue(":s",md5($senha));
         $sql->execute();
 
-        if ($sql->rowCout() > 0 ){
+        if ($sql->rowCount() > 0 ){
             $dado = $sql->fetch();
             session_start();
             $_SESSION['ID_Usuario'] = $dado['ID_Usuario'];
             return true;
         } else {
             return false;        
+        }
     }
-}
 }
 ?>

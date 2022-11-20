@@ -5,76 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cidade Conectada</title>
-    <!-- Acesso externo comentado-->
-    <!--<link rel="stylesheet" href="styles_classificados.css"/>--> 
-    <!--<script src="ProjetoClassificados.js" defer></script>--> 
-    <!-- Adicionado script INTERNO para melhor visualização-->
+    <link rel="stylesheet" href="stiloteladecadastro.css"/>
+    
 </head>
-<script>
-
-</script>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        
-    }
-    body{        
-        background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.7)), url(img1.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    input{
-        display: block;
-        height: 55px;
-        width: 400px;
-        margin: 10px;
-        border-radius: 30px;
-        border: 1px solid white;
-        font-size: 15pt;
-        padding-left: 15px;
-        background-color: rgba(255, 255, 255, 0.01);
-        color: aliceblue;
-    }       
-    #corpo-formulario{        
-        width: 450px;
-        margin: 150px auto 0px auto;
-        text-align: center;
-    }
-    h1{
-        text-transform: uppercase;
-        color: aliceblue;
-        font-family: Helvetica, sans-serif;
-        padding: 20px;      
-    }
-    a{
-        text-decoration: none;
-        color: aliceblue;
-        font-size: 15px;
-        cursor: pointer;
-    }
-    a:hover{
-        text-decoration: underline;
-    }
-    input#submit{
-        background: linear-gradient(180deg, rgba(32, 65, 43, 0.533), rgba(106, 153, 168, 0.6)); 
-        color: white;        
-        cursor: pointer;
-        border-radius: 30px;
-        
-    }
-    #submit:hover{
-        background-image: linear-gradient(to right,rgb(5, 5, 5), rgb(26, 77, 28));
-    }
-
-</style>
 <body>
 <div id="corpo-formulario">
     <h1>Descubra o melhor da sua cidade</h1>
-    <form method="post" >
-        <input type="email" placeholder="Usuário">
-        <input type="password" placeholder="Senha">
+    <form method="POST" action="processa.php" >
+        <input type="email" placeholder="Usuário" name="email">
+        <input type="password" placeholder="Senha" name="senha">
         <input id="submit" type="submit" value="Acessar">
         <a href="http://localhost/classificados/cadastro.php">Ainda não tem cadastro?<strong> Clique Aqui!</strong></a>
     </form>

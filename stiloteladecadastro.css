@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body#cad{        
+    background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.7)), url(img2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+body{        
+    background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.7)), url(img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+input{
+    display: block;
+    height: 55px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 1px solid white;
+    font-size: 15pt;
+    padding-left: 15px;
+    background-color: rgba(255, 255, 255, 0.01);
+    color: aliceblue;
+}       
+#corpo-formulario-cad{        
+    width: 450px;
+    margin: 60px auto 0px auto;
+    text-align: justify;
+}
+#corpo-formulario{
+    width: 450px;
+    margin: 150px auto 0px auto;
+    text-align: center;
+}
+h1{        
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: Helvetica, sans-serif;
+    padding: 20px;      
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+}
+input#submit{
+    background: linear-gradient(180deg, rgba(32, 65, 43, 0.533), rgba(106, 153, 168, 0.6)); 
+    color: white;        
+    cursor: pointer;
+    border-radius: 30px;
+    
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(5, 5, 5), rgb(26, 77, 28));
+}
+.inputBox {
+    position: relative;
+    padding-top: 3px;
+}
+.inputUser{ 
+    font-size: 15px;        
+    letter-spacing: 2px;
+}
+.labelInput{
+    font-size: 15px;  
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    pointer-events: none;
+    transition: .5s;
+    color: white;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -5px;
+    font-size: 12px;
+    color: white;
+}
