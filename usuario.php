@@ -1,57 +1,57 @@
 <?php
-class usuario {   
+
+Class Usuario{
     private $pdo;
     public $msgErro = "";
-    public function conectar($dbnome, $host, $usuario, $senha)
-    {
+    public function conectar($name, $host, $usuario, $senha){
         global $pdo;
         global $msgErro;
         try {
-            $pdo = new PDO("mysql:dbname=".$dbnome.";host=".$host,$usuario,$senha);        
-        } catch (PDOException $e) {
+            $pdo = new PDO("mysql:host=localhost;dbname=classificados", "root", "");
+        }catch(PDOException $e){
             $msgErro = $e->getMessage();
         }
         
-}
+    }
     public function cadastrar($nome, $cpf, $email, $telefone, $cidade, $senha){
-
         global $pdo;
         global $msgErro;
-        //Verificação do cadastro
-        $sql = $pdo->prepare("SELECT ID_Usuario FROM tb_usuario WHERE email = :e");
-        $sql-> bindValue (":e", $email);
+        //verificar registro
+        $conex = "SELECT ID_Usuario FROM tb_usuario WHERE email=:e";
+        $sql = $pdo->prepare($conex);
+        $sql->bindValue(":e", $email);
         $sql->execute();
-        if ($sql->rowCount() > 0 ){
-            return false;
-        } else{
-            $sql = $pdo->prepare("INSERT INTO Tb_Usuario (Nome_Usuario, cpf, email, telefone, cidade, senha) VALUES (:n, :c, :e, :t, :l, :s");
-            $sql-> bindValue (":n", $nome);
-            $sql-> bindValue (":c", $cpf);
-            $sql-> bindValue (":e", $email);
-            $sql-> bindValue (":t", $telefone);
-            $sql-> bindValue (":l", $cidade);
-            $sql-> bindValue (":s", md5($senha));
+        if($sql->rowCount() > 0){
+            return false; //já tem cadastro
+        }else{
+            $sql = $pdo->prepare("INSERT INTO tb_usuario (Nome_Usuario, cpf, email, telefone, Cidade, Senha) VALUES (:n, :c, :e, :t, :l, :s)");
+            $sql->bindValue(":n", $nome);
+            $sql->bindValue(":c", $cpf);
+            $sql->bindValue(":e", $email);
+            $sql->bindValue(":t", $telefone);
+            $sql->bindValue(":l", $cidade);
+            $sql->bindValue(":s", md5($senha));
             $sql->execute();
             return true;
         }
+        
     }
-    public function logar($email, $senha){ 
-
+    public function logar($email, $senha){
         global $pdo;
         global $msgErro;
-        $sql = $pdo->prepare("SELECT ID_Usuario FROM tb_usuario WHERE email = :e AND senha = :s");
-        $sql->bindValue(":e",$email);
-        $sql->bindValue(":s",md5($senha));
+        //verificar email e senha para logar
+        $sql = $pdo->prepare("SELECT ID_Usuario FROM tb_usuario WHERE email=:e AND Senha = :s");
+        $sql->bindValue(":e", $email);
+        $sql->bindValue(":s", md5($senha));
         $sql->execute();
-
-        if ($sql->rowCount() > 0 ){
+        if($sql->rowCount() > 0){
+            //entrar na sessão
             $dado = $sql->fetch();
             session_start();
-            $_SESSION['ID_Usuario'] = $dado['ID_Usuario'];
-            return true;
-        } else {
-            return false;        
+            $_SESSION['Id_Usuario'] = $dado['Id_Usuario'];
+            return true; //logado com sucesso
+        }else{
+            return false;
         }
     }
 }
-?>

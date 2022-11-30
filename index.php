@@ -1,3 +1,7 @@
+<?php
+require_once 'usuario.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,7 +15,7 @@
 <body>
 <div id="corpo-formulario">
     <h1>Descubra o melhor da sua cidade</h1>
-    <form method="POST" action="processa.php" >
+    <form action="" method="POST">
         <input type="email" placeholder="Usuário" name="email">
         <input type="password" placeholder="Senha" name="senha">
         <input id="submit" type="submit" value="Acessar">

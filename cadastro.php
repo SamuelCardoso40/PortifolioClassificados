@@ -1,4 +1,6 @@
-
+<?php
+require 'processa.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,14 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cidade Conectada</title>
-    <!-- Acesso externo comentado-->
+   
     <link rel="stylesheet" href="stiloteladecadastro.css"/>
     
 </head>
 <body id="cad">
     <div id="corpo-formulario-cad">
         <h1>cadastro de usuário</h1>
-        <form method="POST" action="processa.php">        
+        <form method="POST">        
         <div class="inputBox">        
             <input type="text" name="nome" id="nome" class="inputUser" required>
             <label for="nome" class="labelInput">Nome Completo</label>
@@ -38,6 +40,7 @@
             <input type="password" name="confSenha" placeholder="Confirmar Senha" maxlength="8">
             <input id="submit" type="submit" value="Cadastrar">        
         </form>
+        
     </div>
 </body>
 </html>
