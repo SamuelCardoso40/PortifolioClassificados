@@ -8,6 +8,10 @@ Onde os usuários podem encontrar ajuda sobre seu projeto;
 Autores do projeto.
 
 <h1 align="center"> Projeto Classificados </h1>
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 Badges;
 Índice;
 Descrição do Projeto;
