@@ -1,24 +1,54 @@
 # PortifolioClassificados
-Projeto pessoal para treinamento
-
-Descrição do seu projeto;
-Funcionalidades;
-Como os usuários podem utilizá-lo;
-Onde os usuários podem encontrar ajuda sobre seu projeto;
-Autores do projeto.
 
 <h1 align="center"> Projeto Classificados </h1>
+
+# Índice 
+
+* [Classificados](#Título-e-Imagem-de-capa)
+* [Badges](#badges)
+* [Índice](#índice)
+* [Descrição do Projeto](#descrição-do-projeto)
+* [Status do Projeto](#status-do-Projeto)
+* [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
+* [Acesso ao Projeto](#acesso-ao-projeto)
+* [Tecnologias utilizadas](#tecnologias-utilizadas)
+* [Pessoas Contribuidoras](#pessoas-contribuidoras)
+* [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
+* [Licença](#licença)
+* [Conclusão](#conclusão)
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
-Badges;
-Índice;
-Descrição do Projeto;
-Status do Projeto;
-Funcionalidades e Demonstração da Aplicação;
-Acesso ao Projeto;
-Tecnologias utilizadas;
-Pessoas Contribuidoras;
+
+Uma aplicação vinculada a um banco de dados onde prestadores de serviço e vendedores anunciam produtos e serviços na comunidade e ao mesmo tempo ficam sabendo de noticias da localidade. Este site seria uma mistura em pequena escala, de um aplicativo de desapega com um de noticias locais. Em cidades pequenas poucas pessoas tem acesso ao IFood ou OLX, e se concentram em grupos de Whatzapp ou paginas do Facebook. Meu objetivo é reunir esse publico em apenas um lugar.
+
+<h4 align="center"> 
+ :construction:  STATUS - Projeto em construção  :construction:
+</h4>
+
+# :hammer: Funcionalidades do projeto
+
+- `Funcionalidade 1`: Ao realizar o cadastro, o usuario/anunciante passa ater acesso às informaçoes do comércio local dos anunciuantes já cadastrados.
+- `Funcionalidade 2`: Haverá tambem noticias locais como informações sobre o clima, acidentes ou outras noticias da região.
+- `Funcionalidade 3`: Como haverá apenas usuários locais da região especifica, a pessoa não precisará pesquisar muito para encontrar o que necessita.
+
+<h4 align="center"> 
+ :construction:  Acesso ao projeto indisponivel no momento  :construction:
+</h4>
+
+<h4 align="center"> 
+   Tecnologias usadas
+</h4>
+PHP
+SQL
+HTML
+CSS
+
+# Autores
+
+| [<img src="Imagem1.jpg" width =115><br><sub>Samuel Wilton Galvão Cardoso</sub>](https://github.com/SamuelCardoso40) |
+| :---: | :---: | :---: |
+
 Pessoas Desenvolvedoras do Projeto;
 Licença.
