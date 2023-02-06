@@ -32,20 +32,20 @@ $u = new Usuario
 <body>
 <div id="corpo-formulario">
     <h1>Descubra o melhor da sua cidade</h1>
-    <form  method="POST">
-        <input type="email" placeholder="Usuário" name="email">
+    <form action="areaPrivada.php" method="POST">
+        <input type="email" placeholder="Email" name="email">
         <input type="password" placeholder="Senha" name="senha">
         <input id="submit" type="submit" value="Acessar">
         <a href="http://localhost/classificados/cadastro.php">Ainda não tem cadastro?<strong> Clique Aqui!</strong></a>
     </form>
 </div>
-<?php
+<?php 
 if(isset($_POST['email'])){	
 	$email = addslashes($_POST['email']);	
 	$Senha = addslashes($_POST['senha']);	
 	//verificar preenchimento
 	if(!empty($email) && !empty($Senha)){
-		$u->conectar("classificados", "localhost", "root", "");
+		$u->conectar($name, $host, $usuario, $senha);
 		if($u->msgErro == ""){			
 				if($u->logar($email,$Senha)){
                     header("location: areaPrivada.php");					
