@@ -4,9 +4,6 @@
 
 # Índice 
 
-* [Classificados](#Título-e-Imagem-de-capa)
-* [Badges](#badges)
-* [Índice](#índice)
 * [Descrição do Projeto](#descrição-do-projeto)
 * [Status do Projeto](#status-do-Projeto)
 * [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
@@ -40,12 +37,12 @@ Uma aplicação vinculada a um banco de dados onde prestadores de serviço e ven
 <h4 align="center"> 
    Tecnologias usadas
 </h4>
-PHP
-SQL
-HTML
-CSS
+- PHP - 
+- SQL - 
+- HTML - 
+- CSS - 
 
-# Autores (#pessoas-desenvolvedoras)
+# Autores 
 
 [<img src="Imagem1.jpg" width =115><br><sub>Samuel Wilton Galvão Cardoso</sub>](https://github.com/SamuelCardoso40)
 
