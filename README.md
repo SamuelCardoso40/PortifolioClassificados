@@ -47,8 +47,8 @@ CSS
 
 # Autores
 
-| [<img src="Imagem1.jpg" width =115><br><sub>Samuel Wilton Galvão Cardoso</sub>](https://github.com/SamuelCardoso40) |
-| :---: | :---: | :---: |
+[<img src="Imagem1.jpg" width =115><br><sub>Samuel Wilton Galvão Cardoso</sub>](www.linkedin.com/in/samuelcardoso40) |
+
 
 Pessoas Desenvolvedoras do Projeto;
 Licença.
