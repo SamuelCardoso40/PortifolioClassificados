@@ -21,7 +21,7 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
-Uma aplicação vinculada a um banco de dados onde prestadores de serviço e vendedores anunciam produtos e serviços na comunidade e ao mesmo tempo ficam sabendo de noticias da localidade. Este site seria uma mistura em pequena escala, de um aplicativo de desapega com um de noticias locais. Em cidades pequenas poucas pessoas tem acesso ao IFood ou OLX, e se concentram em grupos de Whatzapp ou paginas do Facebook. Meu objetivo é reunir esse publico em apenas um lugar.
+Uma aplicação vinculada a um banco de dados onde prestadores de serviço e vendedores anunciam produtos e serviços na comunidade e ao mesmo tempo ficam sabendo de notícias da localidade. Este site seria uma mistura em pequena escala, de um aplicativo de desapega com um de noticias locais. Em cidades pequenas poucas pessoas tem acesso ao Ifood ou OLX, e se concentram em grupos de Whatzapp ou paginas do Facebook. Meu objetivo é reunir esse publico em apenas um lugar.
 
 <h4 align="center"> 
  :construction:  STATUS - Projeto em construção  :construction:
@@ -29,9 +29,9 @@ Uma aplicação vinculada a um banco de dados onde prestadores de serviço e ven
 
 # :hammer: Funcionalidades do projeto
 
-- `Funcionalidade 1`: Ao realizar o cadastro, o usuario/anunciante passa ater acesso às informaçoes do comércio local dos anunciuantes já cadastrados.
-- `Funcionalidade 2`: Haverá tambem noticias locais como informações sobre o clima, acidentes ou outras noticias da região.
-- `Funcionalidade 3`: Como haverá apenas usuários locais da região especifica, a pessoa não precisará pesquisar muito para encontrar o que necessita.
+- `Funcionalidade 1`: Ao realizar o cadastro, o usuario/anunciante passa ater acesso às informaçoes do comércio local dos anunciantes já cadastrados.
+- `Funcionalidade 2`: Haverá também notícias locais como informações sobre o clima, acidentes ou outras notícias da região.
+- `Funcionalidade 3`: Como haverá apenas usuários locais da região específica, a pessoa não precisará pesquisar muito para encontrar o que necessita.
 
 <h4 align="center"> 
  :construction:  Acesso ao projeto indisponivel no momento  :construction:
@@ -45,9 +45,9 @@ SQL
 HTML
 CSS
 
-# Autores
+# Autores (#pessoas-desenvolvedoras)
 
-[<img src="Imagem1.jpg" width =115><br><sub>Samuel Wilton Galvão Cardoso</sub>](www.linkedin.com/in/samuelcardoso40) |
+[<img src="Imagem1.jpg" width =115><br><sub>Samuel Wilton Galvão Cardoso</sub>](https://github.com/SamuelCardoso40)
 
 
 Pessoas Desenvolvedoras do Projeto;
